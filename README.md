@@ -13,6 +13,20 @@ In this project, I am exploring a improved mind play interfacing and suggesting 
 translating distracting into a challenge for the player to rethink of what concentration is and provide them a chance 
 to learn to stay focused in a given environment.
 
+The current mechanism is 
+welcome screen 
+attention >=63, game starts
+attention <63, remain on welcome screen and the blur changes based on attention
+
+Game starts
+attention >= 70, game keeps going until the end
+attention < 70 for <= 5 sec, game pauses with a alert message on it.
+attention <70 for > 5 sec, game over and automatically goes back to welcome screen
+
+
+
+
+
 
 For compile the files together, you may need a NeuroSky Mindwave Mobile, which you can find out here
 http://store.neurosky.com/products/mindwave-mobile
