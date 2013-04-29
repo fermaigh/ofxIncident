@@ -3,6 +3,7 @@
 #include "ofMain.h"
 #include "ofxBlur.h"
 #include "ofxThinkGear.h"
+#include "ofxTweenLite.h"
 
 class testApp : public ofBaseApp{
 
@@ -21,23 +22,29 @@ class testApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-        ofVideoPlayer fingerMovie;
+        ofVideoPlayer welcomescreen;
         ofVideoPlayer gameplay;
         ofVideoPlayer gameover;
     
         vector<ofFbo*> fbos;
     
         ofxBlur blur;
-    
-        float lastTime;
-        float duration;
-    
-        ofImage alert;
+        ofImage transparency;
+       
     
 private:
     
     ofxThinkGear thinkGear;
     void attentionListener(float &param);
+    
+    float atChangeTime;
+    float meChangeTime;
+    float distAw;
+    float prevAw;
+    float currAw;
+    float distMw;
+    float prevMw;
+    float currMw;
     
     ofTrueTypeFont font;
     
@@ -45,14 +52,24 @@ private:
     
     float currBlur;
     
-    bool notStart;
-    bool inPlay;
-    bool isOver;
+    bool welcome;
+    bool incident;
+    bool over;
+    bool danger;
+    bool extreme;
     bool firstPlaySeq;
-    bool overplaySeq;
-    bool attentionlow;
-    bool bLastTime;
-    bool displayAlert;
+    bool lastPlaySeq;
+    
     int counter;
+    int threshold;
+    int openThreshold;
+    
+    float startTime;
+    float currentTime;
+    float totalTime;
+    bool flip;
+    
+   
+
     
 };
