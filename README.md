@@ -39,6 +39,13 @@ ofThinkGear
 https://github.com/Akira-Hayasaka/ofxThinkGear
 
 ofxTweenLite
-git@github.com:julapy/ofxTweenLite.git
+https://github.com/julapy/ofxTweenLite
 
 I can be reached at fermaigh@gmail.com
+more projects at www.ailain.net
+
+More visual designs at 
+http://dribbble.com/shots/1048596-INCIDENT-S1/buckets
+
+Video
+
